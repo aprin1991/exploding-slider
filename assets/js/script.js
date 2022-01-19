@@ -69,6 +69,18 @@ next.addEventListener("click", function () {
         index = 0;
 
     }
+    changeSlider(index)
+})
+prev.addEventListener("click", function () {
+    if (index > 0) {
+        index--;
+    } else {
+        index = images?.length - 1;
+
+    }
+    changeSlider(index)
+})
+const changeSlider = index => {
     slider.slideIn();
     setTimeout(() => {
         blocks.forEach(el => {
@@ -76,7 +88,7 @@ next.addEventListener("click", function () {
         })
         // slider.slideIn();
     }, 3000);
-})
+}
 
 
 

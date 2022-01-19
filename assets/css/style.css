@@ -15,7 +15,7 @@ body {
   flex-wrap: wrap;
   transform-style: preserve-3d;
   perspective: 1000px;
-  max-height: 100vh;
+  height: 100vh;
 }
 .container .block {
   position: relative;
